@@ -77,8 +77,13 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# Streamlit interface setup
-st.markdown("<h1 style='text-align: center;'>PhotoCritique App</h1>", unsafe_allow_html=True)
+# Streamlit interface setup with logo and name
+st.markdown("""
+    <div style='text-align: center;'>
+        <img src='https://c.top4top.io/p_32310wec20.jpg' alt='Logo' style='width:150px;'>
+        <h1>PhotoCritique App by TRHACKNON</h1>
+    </div>
+    """, unsafe_allow_html=True)
 
 # Sidebar for critique options
 st.sidebar.header("Critique Options")

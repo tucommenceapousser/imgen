@@ -34,6 +34,49 @@ def get_image_content(uploaded_file):
 # Set Streamlit page configuration FIRST
 st.set_page_config(page_title="PhotoCritique", layout="centered")
 
+# Add custom CSS for styling
+st.markdown("""
+    <style>
+    /* Overall background */
+    body {
+        background-color: #1A1A1D;
+        color: #D3D3D3;
+    }
+
+    /* Headings personalization */
+    h1, h2, h3, h4 {
+        color: #F0F;
+        border-bottom: 2px solid #F0F;
+        font-family: 'Comic Sans MS', cursive;
+    }
+
+    /* Container styling */
+    .css-1d391kg {
+        background-color: rgba(50, 50, 50, 0.8) !important;
+        box-shadow: 0 0 10px #F0F, 0 0 20px #0FF;
+        border-radius: 15px;
+        border: 2px solid #F0F;
+    }
+
+    /* Button styling */
+    button {
+        background-color: #0F0;
+        color: #000;
+        border: none;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 0 5px #F0F;
+    }
+
+    /* Alert styling */
+    .stAlert {
+        background-color: #333 !important;
+        border-left: 5px solid #F0F;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 # Streamlit interface setup
 st.markdown("<h1 style='text-align: center;'>PhotoCritique App</h1>", unsafe_allow_html=True)
 

@@ -34,6 +34,30 @@ def get_image_content(uploaded_file):
 # Set Streamlit page configuration FIRST
 st.set_page_config(page_title="PhotoCritique", layout="centered")
 
+import streamlit.components.v1 as components
+
+components.html("""
+    <head>
+        <title>PhotoCritique App by TRHACKNON</title>
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <!-- Meta Tags -->
+        <meta name="description" content="PhotoCritique App for professional photo analysis by TRHACKNON.">
+        <meta name="keywords" content="photography, critique, photo analysis, TRHACKNON">
+        <!-- Social Media Cards -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="PhotoCritique App by TRHACKNON">
+        <meta property="og:description" content="Professional photo analysis by TRHACKNON.">
+        <meta property="og:image" content="https://c.top4top.io/p_32310wec20.jpg">
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="PhotoCritique App by TRHACKNON">
+        <meta property="twitter:description" content="Professional photo analysis by TRHACKNON.">
+        <meta property="twitter:image" content="https://c.top4top.io/p_32310wec20.jpg">
+    </head>
+""", height=0)
+
+
+
 # Add custom CSS for styling
 st.markdown("""
     <style>

@@ -32,7 +32,7 @@ def get_image_content(uploaded_file):
         raise FileNotFoundError("File not uploaded")
 
 # Set Streamlit page configuration FIRST
-st.set_page_config(page_title="PhotoCritique", layout="centered")
+st.set_page_config(page_title="PhotoCritique by TRHACKNON", layout="centered")
 
 import streamlit.components.v1 as components
 
